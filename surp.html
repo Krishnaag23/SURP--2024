@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      property="og:image"
+      content="https://gymkhana.iitb.ac.in/~ugacademics/surp/img/back1.jpg"
+    />
+    <meta charset="utf-8" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>SURP | IIT Bombay</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="why.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- Custom Fonts -->
+    <link
+      href="font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/354b6f899d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+      @font-face {
+        font-family: "Bariol Bold";
+        src: local("Bariol Bold"), url("Bariol_Bold.woff") format("woff");
+      }
+      body {
+        font-family: "Oswald", sans-serif;
+        background-color: #eee;
+      }
+      body section {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      body section .row {
+        align-items: center;
+        height: 100vh;
+      }
+
+      .navbar {
+        padding: 10px;
+      }
+
+      .nav-item {
+        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #004AAD !important;
+      }
+
+      .title {
+        margin: 5%;
+        font-family: var(--bs-body-font-family);
+        color: #004AAD;
+      }
+
+      .card {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        margin: 10px 0;
+        transition: ease all 1s;
+        perspective: 1200px;
+      }
+      .card:hover .cover {
+        transform: rotateX(0deg) rotateY(-180deg);
+      }
+      .card:hover .cover:before {
+        transform: translateZ(30px);
+      }
+      .card:hover .cover:after {
+        background-color: black;
+      }
+      .card:hover .cover h1 {
+        transform: translateZ(100px);
+      }
+      .card:hover .cover h2 {
+        transform: translateZ(100px);
+      }
+      .card:hover .cover .price {
+        transform: translateZ(60px);
+      }
+      .card:hover .cover a {
+        transform: translateZ(-60px) rotatey(-180deg);
+      }
+      .card .cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: ease all 1.5s;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .card .cover:before {
+        content: "";
+        position: absolute;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        z-index: 2;
+        transition: ease all 2.3s;
+        transform-style: preserve-3d;
+        transform: translateZ(0px);
+      }
+      .card .cover:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 2;
+        transition: ease all 1.3s;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      .card .cover.item-a {
+        background-image: url("departments_edited/Biology.jpeg");
+      }
+      .card .cover.item-b {
+        background-image: url("dep/Cminds.png");
+      }
+      .card .cover.item-c {
+        background-image: url("departments_edited/ctara.jpg");
+      }
+      .card .cover.item-d {
+        background-image: url("departments_edited/Chemical.jpeg");
+      }
+      .card .cover.item-e {
+        background-image: url("departments_edited/chemistry.jpg");
+      }
+      .card .cover.item-f {
+        background-image: url("departments_edited/Civil.jpeg");
+      }
+      .card .cover.item-g {
+        background-image: url("dep/climate.png");
+      }
+      .card .cover.item-h {
+        background-image: url("departments_edited/computer.jpeg");
+      }
+      .card .cover.item-i {
+        background-image: url("departments_edited/EarthSciences.jpeg");
+      }
+      .card .cover.item-j {
+        background-image: url("dep/educational.png");
+      }
+      .card .cover.item-k {
+        background-image: url("departments_edited/elec.jpg");
+      }
+      .card .cover.item-l {
+        background-image: url("dep/management.png");
+      }
+      .card .cover.item-m {
+        background-image: url("dep/environmental.png");
+      }
+      .card .cover.item-n {
+        background-image: url("dep/Kcdh.png");
+      }
+      .card .cover.item-o {
+        background-image: url("dep/maths.png");
+      }
+      .card .cover.item-p {
+        background-image: url("departments_edited/Mechanical.jpg");
+      }
+      .card .cover.item-q {
+        background-image: url("dep/mems.png");
+      }
+      .card .cover.item-r {
+        background-image: url("dep/phsyics.png");
+      }
+      .card .cover.item-s {
+        background-image: url("departments_edited/som.jpg");
+      }
+      .card .cover.item-t {
+        background-image: url("dep/syscon.png");
+      }
+      .card .cover.item-u {
+        background-image: url("dep/syscon.png");
+      }
+      .card .cover.item-v {
+        background-image: url("departments_edited/idp.jpg");
+      }
+      .card .cover.item-w {
+        background-image: url("departments_edited/Aerospace.jpg");
+      }
+      .card .cover.item-x {
+        background-image: url("departments_edited/team_project.webp");
+      }
+      .card .cover h1 {
+        font-weight: 600;
+        position: absolute;
+        bottom: 55px;
+        left: 40px;
+        color: white;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        z-index: 3;
+        font-size: 2em;
+        transform: translateZ(0px);
+      }
+
+      .card .cover .price {
+        font-weight: 200;
+        position: absolute;
+        top: 55px;
+        right: 50px;
+        color: white;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        z-index: 4;
+        font-size: 2em;
+        transform: translateZ(0px);
+      }
+      .card .card-back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #0b0f08;
+        transform-style: preserve-3d;
+        transition: ease all 2.3s;
+        transform: translateZ(-1px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card .card-back a {
+        transform-style: preserve-3d;
+        transition: ease transform 2.3s, ease background 0.5s;
+        transform: translateZ(-1px) rotatey(-180deg);
+        background: transparent;
+        border: 1px solid white;
+        font-weight: 200;
+        font-size: 1.3em;
+        color: white;
+        padding: 14px 32px;
+        outline: none;
+        text-decoration: none;
+      }
+      .card .card-back a:hover {
+        background-color: white;
+        color: #0b0f08;
+      }
+      @font-face {
+        font-family: "Bariol Bold";
+        src: local("Bariol Bold"), url("Bariol_Bold.woff") format("woff");
+      }
+
+      .intro-heading {
+        font-family: "Bariol Bold";
+        font-weight: 900;
+      }
+
+      /* CSS style for close button */
+      .btn_custom {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: transparent;
+        border: 2px solid #004AAD;
+        border-radius: 0.6em;
+        color: #004AAD;
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1;
+        margin: 20px;
+        padding: 1.2em 2.8em;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+
+      .btn_custom:hover,
+      .btn:focus {
+        color: #fff;
+        outline: 0;
+      }
+
+      .first {
+        transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+      }
+
+      .first:hover {
+        box-shadow: 0 0 40px 40px #e1dddd inset;
+      }
+
+      /* Adding fade animation in announcement modal */
+      .modal {
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in both;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translate3d(0, -20%, 0);
+        }
+
+        to {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      @media (min-width: 961px) {
+        header .intro-text {
+          padding-top: 25 em;
+          padding-bottom: 50px;
+        }
+      }
+
+      .faq-cell {
+        background-color: #eee;
+        padding: 20px;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 12px;
+        font-size: 18px;
+        border-radius: 10px;
+      }
+
+      .answer {
+        display: none;
+      }
+
+      .faq-cell:hover {
+        background-color: #ddd;
+      }
+
+      .answer p {
+        font-size: 18px;
+      }
+
+      .ext {
+        float: right;
+        margin-right: 3%;
+        cursor: pointer;
+        font-size: 22px;
+        color: #004AAD;
+      }
+
+      .project-button:hover {
+        transform: scale(1.2);
+      }
+
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+      .dropdown:hover .dropdown-toggle,
+      .dropdown:hover .dropdown-toggle:hover {
+        color: blue;
+      }
+
+      .dropdown-menu li a {
+        color: blue;
+        background-color: black;
+      }
+    </style>
+  </head>
+
+  <body class="index">
+    <!-- Modal -->
+
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-default navbar-fixed-top"
+      style="background-color: #004AAD; opacity: 1;
+      transition: opacity 0.3s ease; height: 100px;"
+    >
+      <div class="container" >
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span  class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span  class="icon-bar"></span>
+          </button>
+          <a
+            class="navbar-brand page-scroll text-center"
+            style="color: white"
+            href="#page-top"
+            ><img
+              src="img/ugac.png"
+              alt=""
+              style="height: 7vmax; padding-top: 0; margin-top: -20px"
+          /></a>
+          <a
+            class="navbar-brand page-scroll"
+            style="color: white"
+            href="#page-top"
+            ><img
+              src="img/enpower.jpeg"
+              alt=""
+              style="height: 5vmax; padding-top: 0; margin-top: -20px;"
+          /></a>
+         
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+          <ul class="nav navbar-nav navbar-right " style="background-color: #004AAD;">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            
+            <li>
+              <a class="page-scroll" href="index.html"  style="color:white;margin-top: 15px;  font-weight: bold;"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
+                target="_blank" style="color:white; font-weight: bold;margin-top: 15px; "
+                >Rulebook</a
+              >
+            </li>
+            <li>
+              <a class="page-scroll" href="index.html#faqs" style="color:white; margin-top: 15px; font-weight: bold;">FAQ</a>
+            </li>
+            <!-- <li>
+                        <a class="page-scroll" href="#team">Contact</a>
+                    </li> -->
+            <li>
+              <a class="page-scroll" target="_blank" href="team.html" style="color:white; margin-top: 15px; font-weight: bold;"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a href="https://forms.gle/jr3VK1DaQ4PtMe14A" target="_blank" style="color:white; margin-top: 15px; font-weight: bold;"
+                >Apply Now</a
+              >
+              <!-- <a href="over.html" target = "_blank">Apply Now</a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+
+  
+
+    <h1 class="title text-center" style="font-family: 'Bariol Bold'">
+      PROJECTS IN DIFFERENT DEPARTMENTS
+    </h1>
+    <section>
+      <div class="row">
+        <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="cover item-x">
+                    <h1>FULL-TIME TEAM PROJECT</h1>
+                    <div class="card-back">
+                        <a href="teamproject.html">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="cover item-w">
+                    <h1>AEROSPACE</h1>
+                    <div class="card-back">
+                        <a href="main.html?domain=Aerospace">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="cover item-a">
+                    <h1>BSBE</h1>
+                    <div class="card-back">
+                        <a href="main.html?domain=BSBE">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="cover item-b">
+                    <h1>C-MINDS</h1>
+                    <div class="card-back">
+                        <a href="main.html?domain=C-MINDS">View Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Remaining items omitted for brevity -->
+  
+    
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+              <div class="cover item-c">
+                  <h1>CTARA</h1>
+                  <div class="card-back">
+                      <a href="main.html?domain=Centre for Technology Alternatives for Rural Areas (CTARA)">View Projects</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="card">
+              <div class="cover item-d">
+                  <h1>CHEMICAL</h1>
+                  <div class="card-back">
+                      <a href="main.html?domain=Chemical">View Projects</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+     <!-- Previous items omitted for brevity -->
+     <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card">
+          <div class="cover item-e">
+              <h1>CHEMISTRY</h1>
+              <div class="card-back">
+                  <a href="main.html?domain=Chemistry">View Projects</a>
+              </div>
+          </div>
+      </div>
+  </div> -->
+  <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card">
+          <div class="cover item-f">
+              <h1>CIVIL</h1>
+              <div class="card-back">
+                  <a href="main.html?domain=Civil">View Projects</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card">
+          <div class="cover item-g">
+              <h1>CLIMATE<br />STUDIES</h1>
+              <div class="card-back">
+                  <a href="main.html?domain=Climate Studies">View Projects</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="cover item-h">
+            <h1>COMPUTER<br />SCIENCE</h1>
+            <div class="card-back">
+                <a href="main.html?domain=Computer Science">View Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="cover item-v">
+            <h1>CSRE</h1>
+            <div class="card-back">
+                <a href="main.html?domain=CSRE">View Projects</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="cover item-i">
+            <h1>EARTH<br />SCIENCES</h1>
+            <div class="card-back">
+                <a href="main.html?domain=Earth Sciences">View Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-j">
+          <h1>EDUCATIONAL<br />TECHNOLOGY</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Educational Technology">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-k">
+          <h1>ELECTRICAL</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Electrical">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-l">
+          <h1>ENERGY</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Energy">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Continue replacing the links for the remaining items -->
+
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-m">
+          <h1>ENVIRONMENTAL STUDIES </h1>
+          <div class="card-back">
+              <a href="main.html?domain=Environmental">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-n">
+          <h1>Koita Centre for Digital Health (KCDH)</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Koita Centre for Digital Health (KCDH)">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-o">
+          <h1>MATHEMATICS</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Mathematics">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-p">
+          <h1>MECHANICAL <br> ENGINEERING</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Mechanical Engineering">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-q">
+          <h1>MEMS</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Metallurgy and Material Sciences (MEMS)">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="cover item-v">
+            <h1>MULTI-DISCIPLINARY</h1>
+            <div class="card-back">
+                <a href="main.html?domain=Multidisciplinary">View Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-4 col-sm-6 col-xs-12">
+  <div class="card">
+      <div class="cover item-r">
+          <h1>PHYSICS</h1>
+          <div class="card-back">
+              <a href="main.html?domain=Physics">View Projects</a>
+          </div>
+      </div>
+  </div>
+</div>
+     <!-- Previous items omitted for brevity -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card">
+          <div class="cover item-s">
+              <h1>MANAGEMENT(SOM)</h1>
+              <div class="card-back">
+                  <a href="main.html?domain=School of Management (SOM)">View Projects</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card">
+          <div class="cover item-u">
+              <h1>Systems and Control Engineering (SYSCON)</h1>
+              <div class="card-back">
+                  <a href="main.html?domain=Systems and Control Engineering (SYSCON)">View Projects</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Continue replacing the links for the remaining items -->
+</div>
+    </section>
+
+    <div class="footer" style="width: 100%">
+      <div class="container fam">
+        <div class="contact" style="float: left">
+          <h5 class="">Contact us <i class="fa fa-phone"></i></h5>
+          <ul class="list-unstyled text-muted">
+            <li class="small text-muted">
+              <strong style="color: #11163d; font-size: 1.25em"
+                >Aarohi Deshpande</strong
+              >
+            </li>
+            <li class="small text-muted">
+              Institute Secretary Academic Affairs and Head, EnPoWER
+            </li>
+            <li class="small text-muted">
+              Email:
+              <a
+                style="font-weight: bold; color: #151582"
+                href="mailto:isaa.enpower.iitb@gmail.com"
+                >isaa.enpower.iitb@gmail.com</a
+              >
+            </li>
+            <li class="small text-muted">
+              Phone number: <strong style="color: #11163d">9137472201</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="team" style="float: right">
+          <h5 class="">SURP 2024</h5>
+          <p class="small text-muted">
+            Dive deep in the realm of Academic and Industry related research
+            projects
+          </p>
+          Created with &#10084;&#65039; by UGAC Web Team, 2024-2025
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+    <!-- footer -->
+    <!-- FOOTER -->
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <!-- Typing effect -->
+
+    <!-- scrolling -->
+  </body>
+</html>

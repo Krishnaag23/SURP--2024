@@ -1,0 +1,146 @@
+   <nav
+      class="navbar navbar-expand-lg"
+      data-bs-theme="dark"
+      style="background-color: #004AAD; height: 100px"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href=""
+          ><img src="img/ugac.png" alt="" style="height: 3vmax; padding-top: 0"
+        /></a>
+        <a class="navbar-brand" href=""
+          ><img
+            src="img/enpower.jpeg"
+            alt=""
+            style="height: 3vmax; padding-top: 0"
+        /></a>
+        <a
+          class="navbar-brand"
+          href=""
+          style="
+            font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial,
+              cursive;
+            margin-right: 38vw;
+          "
+        ></a>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="margin-left: -5%"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#about"
+                >ABOUT</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="projects.html"
+                >PROJECTS</a
+              >
+            </li> -->
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PROJECTS
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="isurp.html"
+                    ><span style="text-transform: lowercase"></span>SURP
+                    2024</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="core.html">CORE 2023</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
+                target="_blank"
+                >RULEBOOK</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html#faqs"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="team.html"
+                >CONTACT</a
+              >
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://forms.gle/1xJfDbcZM1FCZ2rE8"
+                >APPLY NOW</a
+              >
+            </li> -->
+            <li class="nav-item active dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href=""
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                APPLY NOW
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/FwGW1oeJYvfbnenW6"
+                    target="_blank"
+                    ><span style="text-transform: lowercase">i</span>SURP
+                    2023</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://forms.gle/AGxAkG4BRZkBVoaa7"
+                    target="_blank"
+                    >CORE 2023</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
