@@ -21,9 +21,17 @@ fetch('projects.json')
         title.textContent = `PROJECTS IN THE ${currentDomain.toUpperCase()} DEPARTMENT`;
 
         filteredProjects.forEach((project, index) => {
+            // Calculate progress percentage 
+            let appliedStudents = 0; 
+            const maxStudents = project['Number of Students Required'];
+            let progress = (appliedStudents / maxStudents) * 100;
+            
+            // Create tags string
+            const tags = project['Tags'] ? project['Tags'].map(tag => `<span class="badge bg-secondary me-1">${tag}</span>`).join('') : '';
+            
             // Create project card
             const card = document.createElement('div');
-            card.className = 'col';
+            card.className = 'col mb-4';
             card.innerHTML = `
                 <div class="card h-100 shadow">
                     <h5 class="card-title text-center">${project["Project Title"]}</h5>
@@ -32,19 +40,24 @@ fetch('projects.json')
                             <h6>Professor: ${project["Name of Professor"]}</h6>
                             <h6>UID: ${project["Project UID"]}</h6>
                         </div>
+                        
+                        <div class="progress mb-3">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated ${progress > 0 && progress <= 25 ? "" : progress > 25 && progress <= 50 ? "bg-info" : progress > 50 && progress <= 75 ? "bg-warning" : progress > 75 && progress < 100 ? "bg-danger" : "bg-success"}" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${appliedStudents}/${maxStudents}</div>
+                        </div>
                         <button
                             type="button"
-                            class="btn btn-primary"
+                            class="btn btn-primary btn-details mb-2"
                             data-bs-toggle="modal"
                             data-bs-target="#modal-${index}"
                             style="background-color: #004AAD; border-color: #004AAD">
                             Details
                         </button>
+                        <span class="tags mb-2 mx-2">${tags}</span>
                     </div>
                 </div>
             `;
             projectCardsContainer.appendChild(card);
-
+            
             // Create project modal
             const modal = document.createElement('div');
             modal.className = 'modal fade';
@@ -58,64 +71,101 @@ fetch('projects.json')
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modalLabel-${index}">${project["Project UID"]}</h1>
+                            <h1 class="modal-title fs-5" id="modalLabel-${index}">${project['Project UID']}</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body table-responsive">
                             <table class="table table-bordered">
                                 <tr>
                                     <th>Description</th>
-                                    <td>${project["Project Description"]}</td>
+                                    <td>${project['Project Description']}</td>
                                 </tr>
                                 <tr>
                                     <th>Number of students</th>
-                                    <td>${project["Number of Students Required"]}</td>
+                                    <td>${project['Number of Students Required']}</td>
                                 </tr>
                                 <tr>
                                     <th>Year of study</th>
-                                    <td>${project["Year of Study Criteria"]}</td>
+                                    <td>${project['Year of Study Criteria']}</td>
                                 </tr>
                                 <tr>
                                     <th>CPI</th>
-                                    <td>${project["CPI Eligibility Criteria"]}</td>
+                                    <td>${project['CPI Eligibility Criteria']}</td>
                                 </tr>
                                 <tr>
                                     <th>Prerequisites</th>
-                                    <td>${project["Prerequisites"]}</td>
+                                    <td>${project['Prerequisites']}</td>
                                 </tr>
                                 <tr>
                                     <th>Duration</th>
-                                    <td>${project["Duration"]}</td>
+                                    <td>${project['Duration']}</td>
                                 </tr>
                                 <tr>
                                     <th>Learning outcome</th>
-                                    <td>${project["Learning Outcome & Expectations from the students"]}</td>
+                                    <td>${project['Learning Outcome & Expectations from the students']}</td>
                                 </tr>
                                 <tr>
                                     <th>Weekly time commitment</th>
-                                    <td>${project["Weekly Time Commitment"]}</td>
+                                    <td>${project['Weekly Time Commitment']}</td>
                                 </tr>
                                 <tr>
                                     <th>Assignment</th>
-                                    <td>${project["Assignment"]}</td>
+                                    <td>${project['Assignment'] ? `<a href="${project['Assignment']}" target="_blank">Link</a>` : 'Not provided'}</td>
                                 </tr>
                                 <tr>
                                     <th>Instructions for assignment</th>
-                                    <td>${project["Instructions for assignment"]}</td>
+                                    <td>${project['Instructions for assignment'] || 'Not provided'}</td>
                                 </tr>
-                                  <tr>
+                                <tr>
                                     <th>Additional key points</th>
-                                    <td>${project["Additional key points"]}</td>
+                                    <td>${project['Additional key points'] || 'Not provided'}</td>
                                 </tr>
                             </table>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button
+                            type="button"
+                            class="btn btn-primary btn-apply"
+                            style="background-color: #004AAD; border-color: #004AAD">
+                            Apply
+                        </button>
                         </div>
                     </div>
                 </div>
             `;
+            
             document.body.appendChild(modal);
+            const applyButton = modal.querySelector('.btn-apply');
+            applyButton.addEventListener('click', function () {
+                if (applyButton.classList.contains('applied')) {
+                    appliedStudents--;
+                    progress = (appliedStudents / maxStudents) * 100;
+                    const progressBar = card.querySelector('.progress-bar');
+                    progressBar.style.width = `${progress}%`;
+                    progressBar.setAttribute('aria-valuenow', progress);
+                    progressBar.textContent = `${appliedStudents}/${maxStudents}`;
+                    applyButton.textContent = 'Apply';
+                    applyButton.classList.remove('applied');
+                    applyButton.classList.remove('btn-danger');
+                    applyButton.classList.add('btn-primary');
+                    applyButton.style.backgroundColor = '#004AAD';
+                    applyButton.style.borderColor = '#004AAD';
+                } else {
+                    appliedStudents++;
+                    progress = (appliedStudents / maxStudents) * 100;
+                    const progressBar = card.querySelector('.progress-bar');
+                    progressBar.style.width = `${progress}%`;
+                    progressBar.setAttribute('aria-valuenow', progress);
+                    progressBar.textContent = `${appliedStudents}/${maxStudents}`;
+                    applyButton.textContent = 'Cancel Application';
+                    applyButton.classList.add('applied');
+                    applyButton.classList.remove('btn-primary');
+                    applyButton.classList.add('btn-danger');
+                    applyButton.style.backgroundColor = '#FF0000';
+                    applyButton.style.borderColor = '#FF0000';
+                }
+            });
         });
     })
     .catch(error => console.error('Error fetching project data:', error));
