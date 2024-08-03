@@ -100,7 +100,7 @@
             }
 
             50% {
-                opacity: 1;
+                opacity: 0;
             }
         }
 
@@ -230,7 +230,80 @@
             color: white;
             background-color: black;
         }
-     
+
+        .logo1 {
+            height: 5vmax;
+            padding-bottom: 15px;
+        }
+
+        .logo2 {
+            height: 6vmax;
+            padding-bottom: 15px;
+        }
+
+        @media screen and (max-width:800px) {
+            .logo1 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            .logo1 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 9vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .logo1 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            .logo1 {
+                height: 6vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+        }
+        .intro-heading{
+            font-size: 20px;
+        }
+        @media screen and (max-width:600px){
+           .intro-heading{
+            font-size:24px;
+           }
+        }
+        .textData{
+        font-size: 22px;
+        }
+        @media screen and (max-width:500px){
+            .textData {
+                font-size:14px
+            }
+        }
     </style>
 </head>
 
@@ -242,11 +315,12 @@
 
 
 
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #b2cced; opacity: 1;
-      transition: opacity 0.3s ease; height: 100px;">
-        <div class="container"> 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #1c52be; opacity: 1;
+      transition: opacity 0.3s ease; height: auto; padding:16px;padding-bottom:24px; display:flex; align-items:center">
+        <div
+            style="width:90%; display:flex; position:relative; justify-content:space-between; margin:0; align-items:center">
+            <div class="navbar-header page-scroll"
+                style="display:flex; align-items:center; position:relative; left:0; gap:5px">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -254,42 +328,42 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" style="color: white" href="#page-top"><img src="img/2 (1).png"
-                    alt="" style="height: 6vmax; padding-top: 0; margin-top: -20px;" /></a>
-                <a class="navbar-brand page-scroll text-center" style="color: white" href="#page-top"><img
-                        src="img/1.png" alt="" style="height: 6vmax; padding-top: 0; margin-top: -20px" /></a>
+                <a class="navbar-brand page-scroll" style="color: white; padding:10px" href="#page-top"><img
+                        class="logo1" src="img/2 (1).png" alt="" style="margin-top:-10px" /></a>
+                <a class="navbar-brand page-scroll text-center; padding:10px" style="color: white" href="#page-top"><img
+                        class="logo2" src="img/1.png" alt="" style="margin-top:-15px" /></a>
 
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="background-color: #b2cced;">
+            <div class="collapse navbar-collapse" style="position:relative;right:0" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="background-color: #1c52be; display: flex; gap:0px">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href=""
-                            style="font-size:medium; color:rgb(35, 35, 35); background-color:#b2cced;font-weight: bolder;margin-top: 15px; ">Home</a>
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255); background-color:#1c52be;font-weight: bolder;margin-top: 15px; ">Home</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about"
-                            style="font-size:medium; color:rgb(35, 35, 35); font-weight: bolder;margin-top: 15px; ">About</a>
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255); font-weight: bolder;margin-top: 15px; ">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="surp.html"
-                            style="font-size:medium; color:rgb(35, 35, 35);margin-top: 15px;  font-weight: bolder;">Projects</a>
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
                     </li>
                     <li>
                         <a href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
-                            target="_blank" style="font-size:medium; color:rgb(35, 35, 35);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
+                            target="_blank"
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#faqs"
-                            style="font-size:medium; color:rgb(35, 35, 35);margin-top: 15px;  font-weight: bold;">FAQ</a>
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bold;">FAQ</a>
                     </li>
                     <li>
                         <a class="page-scroll" target="_blank" href="team.html"
-                            style="font-size:medium; color:rgb(35, 35, 35);margin-top: 15px;  font-weight: bolder;">Contact</a>
+                            style="font-size:small;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -297,10 +371,13 @@
     </nav>
 
     <!-- Header -->
-    <header >
-        <div class="container2">
+    <header style="display:flex; justify-content:center; align-items:center">
+        <div style="background-color:black;opacity:0.7;width:100vw; height:100vh; position:absolute; z-index:10">
+
+        </div>
+        <div class="container2" style="margin:0; position:absolute;padding:0; z-index:11">
             <div class="intro-text">
-                <div class="intro-heading text-center auto-type" style="font-size: 20px;">
+                <div class="intro-heading text-center auto-type" style="padding:0;letter-spacing: 2.2px; color:rgb(34, 71, 255)">
                     <br />
                 </div>
             </div>
@@ -321,16 +398,23 @@
             </div>
             <div class="row">
                 <p style="
-              font-size: 22px;
               font-family: 'Lato', sans-serif;
                 
                 color: #004AAD;
-            " class="text-center" data-aos="zoom-in">
-                    ITURE(In-Term Undergraduate Research Engagement ) serves as a centralized platform for allocating research projects to motivated undergraduate students. It enables them to pursue projects within their respective departments and facilitates the initiation of interdisciplinary projects aligned with their interests. By fostering collaboration with professors and their teams at IIT Kanpur, it encourages students to engage in hands-on research experiences throughout the semester actively.
-development of the IITK Research Portal to streamline the process of mapping professors with students for projects.
-This initiative aims to address the cumbersome and time-consuming project allocation system.
-necessity of this portal, highlighting its potential to help students secure projects even mid-semester, and particularly for the SURGE program, which previously required students to secure professors four months in advance.
-This will lead to the thriving of the research culture among the UGs, which till now is still untapped.
+            " class="textData text-center" data-aos="zoom-in">
+                    ITURE(In-Term Undergraduate Research Engagement ) serves as a centralized platform for allocating
+                    research projects to motivated undergraduate students. It enables them to pursue projects within
+                    their respective departments and facilitates the initiation of interdisciplinary projects aligned
+                    with their interests. By fostering collaboration with professors and their teams at IIT Kanpur, it
+                    encourages students to engage in hands-on research experiences throughout the semester actively.
+                    development of the IITK Research Portal to streamline the process of mapping professors with
+                    students for projects.
+                    This initiative aims to address the cumbersome and time-consuming project allocation system.
+                    necessity of this portal, highlighting its potential to help students secure projects even
+                    mid-semester, and particularly for the SURGE program, which previously required students to secure
+                    professors four months in advance.
+                    This will lead to the thriving of the research culture among the UGs, which till now is still
+                    untapped.
 
 
                     <!-- <div style="text-align: center;">
@@ -425,7 +509,9 @@ This will lead to the thriving of the research culture among the UGs, which till
                 <div class="timeline__event__title text-center">Stage 1:</div>
                 <div class="timeline__event__description">
                     <p>
-                        To apply for a project, you need to submit an individual application form for each project you are interested in. Please ensure that you provide all required information, including the Statement of Purpose (SOP) and other specified requirements as mentioned in the form.
+                        To apply for a project, you need to submit an individual application form for each project you
+                        are interested in. Please ensure that you provide all required information, including the
+                        Statement of Purpose (SOP) and other specified requirements as mentioned in the form.
                     </p>
                 </div>
             </div>
@@ -508,7 +594,8 @@ This will lead to the thriving of the research culture among the UGs, which till
                             <h2 class="card_title">Hands-on research</h2>
                             <div class="card_text">
                                 <p class="text-center">
-                                    An excellent chance to delve into the realm of research as a potential career path, guided by seasoned experts in the field.
+                                    An excellent chance to delve into the realm of research as a potential career path,
+                                    guided by seasoned experts in the field.
 
                                 </p>
                             </div>
@@ -524,7 +611,8 @@ This will lead to the thriving of the research culture among the UGs, which till
                             <h2 class="card_title">Explore multiple domains</h2>
                             <div class="card_text">
                                 <p class="text-center">
-                                    Provides a diverse array of projects from various departments, satisfying curiosity and enabling exploration across multiple domains.
+                                    Provides a diverse array of projects from various departments, satisfying curiosity
+                                    and enabling exploration across multiple domains.
                                 </p>
                             </div>
                         </div>
@@ -539,7 +627,7 @@ This will lead to the thriving of the research culture among the UGs, which till
                             <h2 class="card_title">Explore interdisciplinary fields</h2>
                             <div class="card_text">
                                 <p class="text-center">
-                                     An opportunity to explore combined interest in multiple fields.
+                                    An opportunity to explore combined interest in multiple fields.
                                 </p>
                             </div>
                         </div>
@@ -554,7 +642,8 @@ This will lead to the thriving of the research culture among the UGs, which till
                             <h2 class="card_title">Work with professors</h2>
                             <div class="card_text">
                                 <p class="text-center">
-                                     A golden chance to work under distinguished professors and that too during the semester.
+                                    A golden chance to work under distinguished professors and that too during the
+                                    semester.
                                 </p>
                             </div>
                         </div>
@@ -659,16 +748,19 @@ This will lead to the thriving of the research culture among the UGs, which till
                     <hr />
                     <ul>
                         <li>
-                            Go to the  Portal and click on the APPLY NOW tab present besides the description of the specific project you want to apply for. You will be directed to the google form where you will be required to submit your personal details and some specific details as mentioned by the professor and SoP.
+                            Go to the Portal and click on the APPLY NOW tab present besides the description of the
+                            specific project you want to apply for. You will be directed to the google form where you
+                            will be required to submit your personal details and some specific details as mentioned by
+                            the professor and SoP.
 
                         </li>
 
                         <!-- <li> -->
-                            <!-- You will be redirected to the SURP registration google form. Note: You can only access the registration form through the IITB LDAP account                        </li> -->
+                        <!-- You will be redirected to the SURP registration google form. Note: You can only access the registration form through the IITB LDAP account                        </li> -->
                         <!-- <li> -->
-                            <!-- In this form you will need to enter your personal details, top 2 preferred project IDs, SOP, and assignment’s link. -->
+                        <!-- In this form you will need to enter your personal details, top 2 preferred project IDs, SOP, and assignment’s link. -->
                         <!-- </li> -->
-                       
+
                     </ul>
                 </div>
             </div>
@@ -689,7 +781,10 @@ This will lead to the thriving of the research culture among the UGs, which till
                     </p> -->
                     <ul>
                         <li>
-                            Statement of Purpose should reflect the motivation with which you are filling out the application for the project you wish to do. It is used by the professor to judge if you are enthusiastic enough to learn and work for the entire duration of the project. Please write a separate SOP directed towards each project in case you are applying for 2 projects.
+                            Statement of Purpose should reflect the motivation with which you are filling out the
+                            application for the project you wish to do. It is used by the professor to judge if you are
+                            enthusiastic enough to learn and work for the entire duration of the project. Please write a
+                            separate SOP directed towards each project in case you are applying for 2 projects.
 
                         </li>
                         <!-- <li>
@@ -698,7 +793,7 @@ This will lead to the thriving of the research culture among the UGs, which till
                         </li>
 
                         <li>You can now update all your choices and submit new SOPs.</li> -->
-                        
+
                     </ul>
 
                 </div>
@@ -717,7 +812,10 @@ This will lead to the thriving of the research culture among the UGs, which till
                     </p> -->
                     <ul>
                         <li>
-                            The project durations listed are tentative and may extend beyond the initial timeframe. The length of the ITURE is determined mutually by you and the professor. During the interview, you can propose your preferred dates, and the professor will provide feedback on their availability.
+                            The project durations listed are tentative and may extend beyond the initial timeframe. The
+                            length of the ITURE is determined mutually by you and the professor. During the interview,
+                            you can propose your preferred dates, and the professor will provide feedback on their
+                            availability.
                         </li>
                     </ul>
                 </div>
@@ -756,7 +854,9 @@ This will lead to the thriving of the research culture among the UGs, which till
                     </p> -->
                     <ul>
                         <li>
-                            Any student who fails to perform satisfactorily in the project and/or leaves the project without the consent of the Professor-in-charge will be blacklisted in all further initiatives by ANC Council. They will not receive any certification for the program
+                            Any student who fails to perform satisfactorily in the project and/or leaves the project
+                            without the consent of the Professor-in-charge will be blacklisted in all further
+                            initiatives by ANC Council. They will not receive any certification for the program
                         </li>
                     </ul>
 
@@ -779,7 +879,9 @@ This will lead to the thriving of the research culture among the UGs, which till
                     </p> -->
                     <ul>
                         <li>
-                            At the end of their project, the Professor would review their work and give it a grade out of 10, and anyone >= 6 will get a satisfactory certificate for ITURE, and those >=8 will get a certificate of excellence.
+                            At the end of their project, the Professor would review their work and give it a grade out
+                            of 10, and anyone >= 6 will get a satisfactory certificate for ITURE, and those >=8 will get
+                            a certificate of excellence.
                         </li>
                     </ul>
                 </div>
@@ -898,7 +1000,7 @@ This will lead to the thriving of the research culture among the UGs, which till
                     <h5 class="mb-3">Contact us <i class="fa fa-phone"></i></h5>
                     <ul class="list-unstyled text-muted">
                         <li class="small text-muted">
-                            <strong style="color: #11163d; font-size: 1.25em">Utkarsh Gupta                            </strong>
+                            <strong style="color: #11163d; font-size: 1.25em">Utkarsh Gupta </strong>
                         </li>
                         <li class="small text-muted">
                             General Secretary, (UG) Academics and Career Council
@@ -964,6 +1066,7 @@ This will lead to the thriving of the research culture among the UGs, which till
             strings: ["IN-TERM UNDERGRADUATE RESEARCH ENGAGEMENT"],
             typeSpeed: 80,
             backSpeed: 80,
+            startDelay:0,
             loop: true,
         });
     </script>
