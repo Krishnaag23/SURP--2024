@@ -20,7 +20,7 @@
     {
       "Domain": "BSBE",
       "Project Title": "Developing personalized cancer treatment strategies using computational biology",
-      "Project UID": "BB01",
+      "Project UID": "BSBE01",
       "Name of Professor": "Deepak K Agrawal",
       "Project Description": "In this project, we will explore the role of chemo and immunotherapies to improve cancer survivorship. For that, we will develop patient-specific mathematical models for tumor cell population dynamics to understand the evolution of solid tumors and the subsequent use of this knowledge for personalized treatment that increases the chance of overcoming cancer treatment resistance and side effects. The objective will be to develop knowledge and computational tools that can be translated into the clinic.",
       "Number of Students Required": 1,
@@ -37,7 +37,7 @@
     {
       "Domain": "BSBE",
       "Project Title": "Developing informatics-based diagnostic tools and platforms for biomedical applications",
-      "Project UID": "BB02",
+      "Project UID": "BSBE02",
       "Name of Professor": "Deepak K Agrawal",
       "Project Description": "We will develop an efficient computational pipeline for the real-time evaluation of healthcare variables to determine the patient state. For that, we will combine state-of-the-art machine learning approaches with mathematical modelling techniques to decode healthcare data. The objective will be to develop knowledge and computational tools that can be translated to improve the patient care. Systems level work will be conducted.",
       "Number of Students Required": 1,
@@ -54,7 +54,7 @@
     {
       "Domain": "BSBE",
       "Project Title": "Lung health and disease detection using AL/ML models",
-      "Project UID": "BB03",
+      "Project UID": "BSBE03",
       "Name of Professor": "Deepak K Agrawal",
       "Project Description": "Post Covid-19, most lungs are compromised, which means they are not 100% functional. A recent study suggested Indians suffer high rates of lung function damage after acute COVID-19, with about half reporting shortness of breath. We will use image-based and ventilator waveform signal-based lung modalities to develop differential models to determine and predict lung health. The objective will be to develop knowledge and computational tools that can be translated to improve the patient care. Systems level work will be conducted.",
       "Number of Students Required": 1,
@@ -71,7 +71,7 @@
     {
       "Domain": "BSBE",
       "Project Title": "Simulation and reconstruction of pulse-echo data in ultrasound imaging",
-      "Project UID": "BB04",
+      "Project UID": "BSBE04",
       "Name of Professor": "Sandeep Kumar Kalva",
       "Project Description": "The project initially involves simulation of pulse-echo ultrasound (US) signals using Field-II and Matlab for various shaped digital phantoms. The pulse-echo US signals will be simulated for different types of ultrasound transducers  for example single-element US transducer and linear-array US transducer configurations. Later, reconstruction algorithms will be developed to render B-mode US images for various shaped digital phantoms including biological tissues/organs.",
       "Number of Students Required": 1,
@@ -88,7 +88,7 @@
     {
       "Domain": "BSBE",
       "Project Title": "Designing a nano-second pulsed driver circuit in Altium designer for optoacoustic imaging applications",
-      "Project UID": "BB05",
+      "Project UID": "BSBE05",
       "Name of Professor": "Sandeep Kumar Kalva",
       "Project Description": "The project involves designing a PCB layout based pulsed driving circuit in Altium designer software. This is designed to drive the LEDs in pulsed mode in the order of few 10s of nanoseconds and at kHz repetition rate. The major applications include in developing pulsed light source circuitry for applications in optoacoustic imaging.",
       "Number of Students Required": 1,
@@ -189,7 +189,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Quantifying dynamics of drug resistant colonies using advanced image processing and computational models",
-      "Project UID": "CL01",
+      "Project UID": "CHE01",
       "Name of Professor": "Sayantan Dutta",
       "Project Description": "Resistance to therapies is a significant challenge in successful treatment of cancers. Frequently, this resistance arises from subtle genetic variations within individual malignant cells that evade therapy and subsequently multiply. In this endeavor, we aim to employ image processing tools to assess the behavior of these resilient clones using microscopy images provided by our collaborator at Northwestern University. Our ultimate goal is to construct a computational model integrating principles from tissue mechanics and systems biology to elucidate the growth dynamics of distinct surviving colonies and their eventual interactions.",
       "Number of Students Required": 1,
@@ -205,7 +205,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Modeling of multi-phase suspensions with lattice Boltzmann method",
-      "Project UID": "CL02",
+      "Project UID": "CHE02",
       "Name of Professor": "Amol Subhedar",
       "Project Description": "Suspensions in multi-phase flow are of immense importance in industry. The challenge lies in a unified treatment of the solid motion transversing through multiple fluids such that mass and momentum are conserved while producing correct surface energetics at the triple junctions. In this project, a novel model based on the lattice Boltzmann method will be built to address these challenges. The model will be analyzed using a multi-scale analysis and further tested with analytical solutions/ other CFD tools.",
       "Number of Students Required": "two",
@@ -221,7 +221,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Optimal positioning of the catalyst particles in fixed-bed reactor",
-      "Project UID": "CL03",
+      "Project UID": "CHE03",
       "Name of Professor": "Amol Subhedar",
       "Project Description": "The spatial distribution of catalyst particles in a fixed-bed reactor influences their catalytic activity. In turn, the catalytic activity determines the course of the chemical reaction. Available experimental studies suggest a few ways to arrange the catalyst particles optimally. In this project, we analyze the problem computationally using the lattice Boltzmann method. Specifically, we solve for diffusion-reaction equation for the concentration field in three-dimensional porous media. We will use numerical solutions to shed more light on the optimum arrangement of the catalyst particles.",
       "Number of Students Required": "two",
@@ -238,7 +238,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "On the mechanism of nanoparticles in water disinfection: Using microfluidic devices to understand and design point of use systems",
-      "Project UID": "CL04",
+      "Project UID": "CHE04",
       "Name of Professor": "Rajdip Bandyopadhyaya",
       "Project Description": "Disinfection by metal nanoparticle (NP) impregnated activated carbon (AC) is proposed in this project. This will be done in a gravity-driven filter-column set-up, which would run without any power, ideal in a resource-constrained scenario. Understanding the interaction between NPs and bacterial cells is thus crucial to explain the device performance. The project aims to uncover such biotic-abiotic interactions by microfluidic experiments, involving bacterial cell-laden water being flown, over PDMS gel casted or 3D printed channels (with different patterned surfaces), mimicking the intergranular pore structure of AC. The optimum hybrid material in terms of NP size and surface number density of these particles, on different patterned carbon surfaces would be found, to be used for the gravity-driven POU system. Thus, for the first time, experiments based on microfluidic platforms will result in development of a new engineering design of a power-free water disinfection system. The work will be as part of a team of other students with interdisciplinary background, with ample scope to learn and innovate. The research involves: (i) either designing and conducting experiments with microfluidic devices, or (ii) engineering of water treatment systems.",
       "Number of Students Required": 2,
@@ -254,7 +254,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Optimization of Downstream Refinery Processes using Genetic Algorithm/AI/ML",
-      "Project UID": "CL05",
+      "Project UID": "CHE05",
       "Name of Professor": "Kannan Moudgalya",
       "Project Description": "Most of the refinery simulations are currently carried out using commercial simulators, such as Aspen Plus and Aspen HYSYS. Unfortunately, commercial simulators are very expensive to the industry. Very often, only a few people can operate them simultaneously, although there could be many more interested people, who will have to wait for their turns. Lately the Government has also put restrictions on the import. Because of this, public sector units may not be able to buy/augment commercial simulators, even if they have funds. Finally, for a country of our size, it will be useful if we can develop simulation technology locally. To address these issues, we are working to develop a refinery simulator. Further to this, we have already developed models for downstream refinery processes like Isomerization Reactor, Fluid Catalytic Cracker, etc. These models need to be optimized and tuned using the available data by making use Genetic Algorithms or AI/ML algorithms.",
       "Number of Students Required": 2,
@@ -270,7 +270,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Including device models in eSim Library",
-      "Project UID": "CL06",
+      "Project UID": "CHE06",
       "Name of Professor": "Kannan Moudgalya",
       "Project Description": "eSim (previously known as Oscad / FreeEDA) is a free/libre and open-source EDA tool for circuit design, simulation, analysis, and PCB design developed by FOSSEE, IIT Bombay. For more details please check:https://esim.fossee.in.\n\nWe are in the process of adding more SPICE Level device models to the eSim Libraries. We would like to have interns have good specialization in device physics, device modelling and even device fabrication. The interns need to create device models of various technology nodes which can be used to generate various Integrated circuits.",
       "Number of Students Required": 2,
@@ -286,7 +286,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Machine learning applied to study of chemical reactions on catalyst surfaces",
-      "Project UID": "CL07",
+      "Project UID": "CHE07",
       "Name of Professor": "Abhijit Chatterjee",
       "Project Description": "Catalysts are used extensively in the chemical industry to carry out chemical reactions. The catalyst surface contains diverse arrangements of molecules. These arrangements dictate the number of reaction events that can happen in a certain duration of time. The goal of this work is to develop graph convolution neural networks for the molecular topologies which can be used to predict and optimize the reaction rates. Students will be exposed to various machine learning techniques in this project.",
       "Number of Students Required": 1,
@@ -302,7 +302,7 @@
     {
       "Domain": "Chemical",
       "Project Title": "Machine learning applied to hydrogen storage materials",
-      "Project UID": "CL08",
+      "Project UID": "CHE08",
       "Name of Professor": "Abhijit Chatterjee",
       "Project Description": "Metal hydrides are promising candidates for hydrogen storage applications. From a materials discovery perspective, an accurate, efficient computational workflow is required that can rapidly analyze/predict thermodynamic properties of these materials. In this work, we develop a machine learning model for hydrogen storage materials. The promising results already obtained with our computational workflow suggest that the approach can be used in future for wider materials search and discovery. Students will be exposed to various machine learning techniques in this project.",
       "Number of Students Required": 1,
@@ -840,7 +840,7 @@
     {
       "Domain": "Mathematics",
       "Project Title": "Option pricing using neural networks",
-      "Project UID": "MT01",
+      "Project UID": "MTH01",
       "Name of Professor": "S. Baskar",
       "Project Description": "Artificial Neural Networks (ANNs) have been successfully employed in approximating nonlinear functions and solving differential equations (DEs). Unlike traditional methods, ANNs do not assume any predefined functional relationship between input data and output, making them a powerful tool for function approximation. Recently, there has been a significant increase in research activities focused on using ANNs to enhance computational efficiency in option valuation by learning from the results of established option pricing models, such as the Black-Scholes and Heston models. The aim of this project is to train a student in the application of ANN tools for option pricing models.",
       "Number of Students Required": 1,
@@ -955,7 +955,7 @@
     {
       "Domain": "Metallurgy and Material Sciences (MEMS)",
       "Project Title": "AI/ML assisted design of perovskite based piezoelectric material",
-      "Project UID": "MM01",
+      "Project UID": "MSE01",
       "Name of Professor": "Prasanna Mural",
       "Project Description": "This study utilizes a machine learning strategy to efficiently predict and design perovskite-based piezoelectric materials, overcoming the limitations of traditional experimental and computational approaches. By identifying critical physical quantities such as first ionization energy and formation energy, the research provides a rapid and accurate method for exploring various doped compositions, exemplified by the discovery of a remarkably high d33 value.",
       "Number of Students Required": 1,
@@ -972,7 +972,7 @@
     {
       "Domain": "Metallurgy and Material Sciences (MEMS)",
       "Project Title": "Interpretation of Capacitive Deionization Performance by Analysis of Various Parameters Using Machine Learning",
-      "Project UID": "MM02",
+      "Project UID": "MSE02",
       "Name of Professor": "Prof. Shobha Shukla",
       "Project Description": "Capacitive deionization (CDI) is a highly efficient water treatment technology that removes ions using electrodes and electrical double layer capacitance, offering benefits like lower energy consumption, reduced chemical usage, and minimal environmental impact compared to traditional desalination methods. Optimizing CDI involves analyzing various electrode and cell parameters, where machine learning plays a crucial role. Machine learning algorithms can predict CDI performance based on factors such as electrode material, surface area, flow rate, and operating voltage, enabling data-driven decisions for system design and optimization. By analyzing large datasets of parameters and CDI outcomes, machine learning can identify complex patterns beyond human capabilities. This project aims to find the best machine learning techniques to analyze these parameters and predict CDI performance, providing insights to advance and optimize CDI technology for water treatment.",
       "Number of Students Required": 1,
@@ -989,7 +989,7 @@
     {
       "Domain": "Metallurgy and Material Sciences (MEMS)",
       "Project Title": "Nanometer-scale strain mapping using transmission electron microscopy (TEM)-based technique(s)",
-      "Project UID": "MM03",
+      "Project UID": "MSE03",
       "Name of Professor": "Abhinandan Gangopadhyay",
       "Project Description": "The project will explore the application of TEM-based technique(s) to generate reliable strain  map around nanoscale structural features such as dislocation, quantum dot, etc. For example, Geometric Phase Analysis (GPA) technique utilizes a dot-like high-resolution (scanning) transmission electron microscopy images to map the strain field in the area of interest. The optimization of desired spatial resolution and precision of the GPA-generated strain map needs a deeper understanding of the method as well as the experimental variables related to image formation process, which will be attempted in this project.",
       "Number of Students Required": 1,
@@ -1005,7 +1005,7 @@
     {
       "Domain": "Metallurgy and Material Sciences (MEMS)",
       "Project Title": "Kinetics of gas-solid reactions - application to potential routes for \"green\" ironmaking",
-      "Project UID": "MM04",
+      "Project UID": "MSE04",
       "Name of Professor": "Somnath Basu",
       "Project Description": "Iron and steel production contributes close to 10% global CO2 emissions. Conventional ironmaking technologies involve reduction of iron ore agglomerates with carbon and CO-rich reductants, leading to a CO2-footprint. Hydrogen is a potent alternate and its use as a reductant is expected the reduce the overall CO emission from ironmaking. However, technologies for using near-100% H2 as a reducing agent are theoretically possible but exist only at lab/pilot scale.\nSuccessful transition from C/CO to H2 as the reductant of choice is dependent on clearly understanding the mechanism(s) of reaction with H2, vis-à-vis CO, and the rate controlling step(s). An earlier work in MEMS Department has shown that reduction of iron oxides involves multiple steps, often having contradicting requirements for enhancing the reaction kinetics. With this background, it is proposed to investigate in detail the mechanism of each step of reduction through controlled experiments and characterization, with an aim to understand the differences caused if CO is replaced with H2 as the reductant.",
       "Number of Students Required": "02",
@@ -1021,7 +1021,7 @@
     {
       "Domain": "Metallurgy and Material Sciences (MEMS)",
       "Project Title": "Simulation of microstructure evolution during metal additive manufacturing",
-      "Project UID": "MM05",
+      "Project UID": "MSE05",
       "Name of Professor": "Durga A",
       "Project Description": "Metal additive manufacturing has been adopted by several strategic sectors like biomedical, aerospace, defence. However, alloys developed for traditional processes most often cannot be directly used in these applications. Therefore, there is a need to develop new materials to cater to different applications using metal additive manufacturing. One of the key pieces to the puzzle is to be able to predict how the microstructure (phases, composition, grain structure, etc.) evolves during the process so that one can tailor the process to obtain the desired microstructure and thereby properties. In this project, simulation tools will be used to predict the microstructure evolution. Depending on the students' capabilities and interest, new model development to do the same could also be explored.",
       "Number of Students Required": 2,
@@ -1120,7 +1120,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Solid-state entanglement generation and manipulation",
-      "Project UID": "PH01",
+      "Project UID": "PHY01",
       "Name of Professor": "Bhaskaran M",
       "Project Description": "This project will involve a detailed and exhaustive exploration on superconducting hybrid systems for solid-state entanglement generation and control. This is a theory and computation project involving an in-depth exploration into the subject via quantum transport based simulations.",
       "Number of Students Required": 2,
@@ -1137,7 +1137,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Characterizing Cadmium Zinc Telluride detectors for space telescopes",
-      "Project UID": "PH02",
+      "Project UID": "PHY02",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "Cadmium Zinc Telluride detectors are highly sensitive for detecting hard X-ray photons in the energy range from 20-200 keV. A specific type of these detectors has been used in multiple Indian space missions including AstroSat, Aditya-L1, etc. They will also be used for the proposed IITB-led Daksha space mission ( www.dakshasat.in ). \nTo optimally use these detectors, we need to study them in detail in the lab and measure their performance under varying temperatures. We need to map the conversion of photon energy to an electronic readout, measure electronic noise, and study noisy pixels at various timescales.\nThe CZT detector, composed of N-type semiconductor material, serves the crucial role of detecting high-energy photons within the energy spectrum of 20 to 200 KeV. However, its performance is subject to the influence of electronic noise, crystal impurities, and thermal noise inherent to the system. \nThe Daksha mission will require us to test about 1500 such detectors in the lab. The goal of this project is to lay the foundation of this monumental effort using the state-of-the-art Thermal Chamber and Clean room facilities available at STAR Lab.",
       "Number of Students Required": 1,
@@ -1154,7 +1154,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Hardware Development for Space Telescopes",
-      "Project UID": "PH03",
+      "Project UID": "PHY03",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "IIT Bombay leads the highly ambitious “Daksha” project to build the world’s most sensitive high-energy space telescopes for detecting astrophysical transients. In the pursuit of detecting high-energy events in astrophysical objects, we are actively working on enhancing the data readout process. Presently, our setup involves CZT (Cadmium Zinc Telluride) detectors integrated into an FPGA board capable of accommodating up to 20 detectors, forming what is known as the \"ME\" (Medium Energy Range 20-200 KeV) box. This system is controlled via LABVIEW.\n\nThe primary goal of this project is to gain a comprehensive understanding of the existing FPGA readout schemes for the ME board and, subsequently, to optimize and improve these schemes.",
       "Number of Students Required": 1,
@@ -1171,7 +1171,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Analyzing space telescope data to study the brightest explosions - GRBs",
-      "Project UID": "PH04",
+      "Project UID": "PHY04",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "Gamma-ray bursts are explosions in the universe that come from the death of massive stars or the merger of neutron-star black-hole systems. GRBs give out a luminous initial burst called prompt emission and late broad-band emission called afterglow. Afterglows are modeled as a power law function in time and energy, where the index gives us information about the Lorentz factor of electrons in the jet, the density of the interstellar medium, etc. Different space telescopes like AstroSat, Swift, Chandra, Fermi etc observe in different energy ranges: and combining their data gives a complete picture of the broad emission.\n\nScope of work:\nHow to analyze Chandra, SXT, Swift XRT,  Fermi GBM, Fermi LAT, Swift BAT, and UVIT data",
       "Number of Students Required": 1,
@@ -1188,7 +1188,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Fast and furious: studying relativistic jets in GRB afterglows",
-      "Project UID": "PH05",
+      "Project UID": "PHY05",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "Gamma-ray bursts are explosions in the universe that come from the death of massive stars or the merger of neutron-star black-hole systems. GRBs give out a luminous initial burst called prompt emission and late broad-band emission called afterglow. The prompt emission is generated by shock-accelerated electrons in highly collimated relativistic jets. These jets interact with the surrounding medium to give out afterglow. In this project, we will use afterglowpy - the current, easy-to-understand, broadband afterglow fitting python package, to estimate jet parameters like total kinetic energy, angular span of the jet, etc and understand the physics behind these emission mechanisms.\n\nScope of work:\nAfterglowpy modeling\nX-ray + optical data",
       "Number of Students Required": 1,
@@ -1204,7 +1204,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Hunting Near Earth Objects with a Robotic Telescope",
-      "Project UID": "PH06",
+      "Project UID": "PHY06",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "The project is focused on the real-time discovery and follow-up of Near Earth Objects (NEOs), such as asteroids and comets, using the GROWTH-India Telescope (GIT). Students will collaborate closely with international partners to analyze data from the Zwicky Transient Facility (ZTF) for the identification of new asteroids, which will be reported to the Minor Planet Centre (MPC). By working with GIT, students will gain hands-on experience in real-time target observation to enhance orbital information and confirm the status of these objects as NEOs, ultimately leading to their publication as Minor Planet Electronic Circulars (MPECs). Students can also conduct follow-up observations of known comets to discover their outbursts, contributing to the publication of Astronomer's Telegrams (ATels). Another aim of this project is to improve the GIT in-house Astreaks pipeline, which is employed for processing non-sidereal data. Students will focus on improving the astrometric calculations within the pipeline, with the goals of reducing processing time and developing a more precise method for photometry of asteroids and comets observed by GIT.\n\nScope of the project:\nGIT operations and pipeline development\nAsteroid search\nEM-GW follow-up",
       "Number of Students Required": 1,
@@ -1220,7 +1220,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Finding transients in GROWTH-India Telescope data",
-      "Project UID": "PH07",
+      "Project UID": "PHY07",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "The project aims to develop and improve the image subtraction and source identification (vetting) pipelines for the GROWTH-India Telescope. Students will be responsible for testing and enhancing the image subtraction program to ensure its robustness with more complex data. Regarding vetting, students will work on both analytical and machine learning (ML)--based pipelines for distinguishing between real sources and false positives. This project involves creating datasets for the ML pipeline, injecting real sources, conducting human scans, and comprehensive testing. The pipeline will eventually be integrated into the GIT system, facilitating various transient searches such as identifying novae in the M31 galaxy, discovering Electromagnetic counterparts of Gravitational Waves (EMGW), and detecting Gamma-ray burst afterglows, among others. Good students will have the unique opportunity to work closely with a Caltech professor and other international collaborators for this project, and a chance to co-author refereed publications.",
       "Number of Students Required": 2,
@@ -1236,7 +1236,7 @@
     {
       "Domain": "Physics",
       "Project Title": "Autonomous Planning and Scheduling for an Integral Field Unit Astronomical Spectrograph",
-      "Project UID": "PH08",
+      "Project UID": "PHY08",
       "Name of Professor": "Varun Bhalerao",
       "Project Description": "The student will develop autonomous scheduling and planning algorithms for the SED Machine v2, an integral field unit spectrograph on the robotic 84-inch Kitt Peak Telescope. The student will join an international multidisciplinary team of scientists and engineers and contribute to an open-source Python package for astronomy operations research. The student will master mixed integer programming and learn cutting edge mathematical optimization solvers such as Gurobi and CPLEX. Depending on the student’s interests, they will have opportunities to develop interactive web applications, learn high performance computing skills on NASA supercomputers, and/or visit the observatory for software pipeline commissioning.\n\nScope of work:\nDevelopment of M4opt package, with opportunities to applications in current observations",
       "Number of Students Required": 1,
