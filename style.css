@@ -22,7 +22,7 @@ body {
 }
 .container {
   width: 75%;
-  margin: auto; 
+  /*margin: auto; */
   margin-bottom: 10%;
   align-items: center;
   justify-content: center;
