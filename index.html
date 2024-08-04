@@ -6,6 +6,9 @@
     <meta property="og:image" content="https://gymkhana.iitb.ac.in/~ugacademics/surp/img/back1.jpg" />
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -454,10 +457,7 @@
                         <a class="page-scroll" href=""
                             style="font-size:medium;padding:9px; color:rgb(255, 255, 255); background-color:#1c52be;font-weight: bolder;margin-top: 15px; ">Home</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about"
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255); font-weight: bolder;margin-top: 15px; ">About</a>
-                    </li>
+                    
                     <li>
                         <a class="page-scroll" href="surp.html"
                             style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
@@ -485,6 +485,46 @@
 
     <!-- Header -->
     <header style="display:flex; justify-content:center; align-items:center">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="./img/banner-01.jpg" alt="Chania" width="1600" height="698">
+        <div class="carousel-caption">
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="./img/banner-02.jpg" alt="Chania" width="1600" height="698">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="./img/banner-03.jpg" alt="Flower" width="1600" height="698">
+        <div class="carousel-caption">
+          
+        </div>
+      </div>
+
+      
+  
+    </div>
+
+    <!-- Left and right controls -->
+    
+  </div>
+</div>
+
         <div class="landingPage">
             <div class="titleContainer">
                 <h1>IITK RESEARCH PORTAL</h1>
@@ -521,47 +561,6 @@
 
     <!-- About Section -->
     <section id="about" style="background-color: #fff">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading" style="font-family: 'Anton', sans-serif; color: #004AAD"
-                        data-aos="zoom-in">
-                        WHAT IS IITK Research Projects Portal?
-                    </h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                <p style="
-              font-family: 'Lato', sans-serif;
-                
-                color: #004AAD;
-            " class="textData text-center" data-aos="zoom-in">
-                    IITK Research Projects Portal serves as a centralized platform for allocating
-                    research projects to motivated undergraduate students. It enables them to pursue projects within
-                    their respective departments and facilitates the initiation of interdisciplinary projects aligned
-                    with their interests. By fostering collaboration with professors and their teams at IIT Kanpur, it
-                    encourages students to engage in hands-on research experiences throughout the semester actively.
-                    development of the IITK Research Portal to streamline the process of mapping professors with
-                    students for projects.
-                    This initiative aims to address the cumbersome and time-consuming project allocation system.
-                    necessity of this portal, highlighting its potential to help students secure projects even
-                    mid-semester, and particularly for the SURGE program, which previously required students to secure
-                    professors four months in advance.
-                    This will lead to the thriving of the research culture among the UGs, which till now is still
-                    untapped.
-
-
-                    <!-- <div style="text-align: center;">
-                    <ul style="display: inline-block; list-style-type: decimal; color: #004AAD;">
-                        <li style="font-size: 22px;"><b><span style="text-transform: lowercase;">i</span>SURP 2023</b></li>
-                        <li style="font-size: 22px;"><b>CORE 2023</b></li>
-                    </ul>
-                </div> -->
-
-                </p>
-            </div>
-        </div>
 
         <br>
         <br>
@@ -847,7 +846,7 @@
                 margin-right: 20px; /* Add right margin for space */
             border-radius: 5%; 
               " data-aos="slide-up">
-                        <span style="text-transform: lowercase;"></span>SURP 2024
+                        <span style="text-transform: lowercase;"></span>View Projects
                     </a>
                     <!-- <a href="core.html" class="btn btn-xl project-button" style="
                 font-family: 'Bariol Bold';
