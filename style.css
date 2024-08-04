@@ -22,8 +22,11 @@ body {
 }
 .container {
   width: 75%;
-  /* margin: auto; */
+  margin: auto; 
   margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
 .card-title {
   padding: 15px;
@@ -31,10 +34,15 @@ body {
   color: white;
   height: 50%;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: block;
 }
 
 .card-text {
   align-items: center;
+  justify-items: center;
+  justify-self: unset;
 }
 .navbar {
   padding: 10px;
