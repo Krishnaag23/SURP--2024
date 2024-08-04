@@ -304,6 +304,116 @@
                 font-size:14px
             }
         }
+        .landingPage{
+            margin-top:10vh;
+            display:flex; 
+            flex-direction: column;
+            gap:30px;
+            position:absolute;
+            z-index:10;
+            justify-content: space-between;
+            align-items: center;
+            width:100vw;
+        }
+        .titleContainer{
+            width:100vw;
+            text-align: center;
+            position: relative;
+            z-index:6;
+            background: linear-gradient(to right, rgb(169, 168, 168),white, rgb(169, 168, 168));
+            animation: slideInFromTop 1s ease-in-out forwards;
+        }
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .titleContainer h1{
+            font-size:54px;
+            color: black;
+            font-weight:900;
+        }
+        .textContainer h2{
+            font-size:38px
+        }
+        .textContainer p{
+            font-size:17px;
+        }
+        .textContainer{
+            width:50vw; 
+            height:68vh; 
+            background-color:rgba(0,0,0,0.7); 
+            border-radius: 15px; 
+            position:relative;
+            display:flex;
+            z-index: 5;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:20px;
+            font-size:20px;
+            animation: slideInFromBottom 1.5s ease-in-out forwards;
+        }
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @media screen and (max-width:500px){
+            .landingPage{
+                margin-top:92px;
+                display:flex; 
+                flex-direction: column;
+                gap:30px;
+                position:absolute;
+                z-index:10;
+                justify-content: space-between;
+                align-items: center;
+                width:100vw;
+            }
+            .titleContainer{
+                width:100vw;
+                text-align: center;
+                position: relative;
+                z-index:6;
+                background: linear-gradient(to right, rgb(169, 168, 168),white, rgb(169, 168, 168));
+                animation: slideInFromTop 1s ease-in-out forwards;
+            }
+            .titleContainer h1{
+                font-size:28px;
+                color: black;
+                font-weight:800;
+            }
+            .textContainer{
+                width:90vw; 
+                height:auto; 
+                background-color:rgba(0,0,0,0.7); 
+                border-radius: 15px; 
+                position:relative;
+                display:flex;
+                z-index: 5;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding:15px;
+                font-size:20px;
+                animation: slideInFromBottom 1.5s ease-in-out forwards;
+            }
+            .textContainer h2{
+                font-size:30px
+            }
+            .textContainer p{
+                font-size:15px;
+            }
+        }
     </style>
 </head>
 
@@ -375,13 +485,35 @@
 
     <!-- Header -->
     <header style="display:flex; justify-content:center; align-items:center">
-        <div style="background-color:black;opacity:0.7;width:100vw; height:100vh; position:absolute; z-index:10">
-
-        </div>
-        <div class="container2" style="margin:0; position:absolute;padding:0; z-index:11">
-            <div class="intro-text">
-                <div class="intro-heading text-center auto-type" style="padding:0;letter-spacing: 2.2px; color:rgb(34, 71, 255)">
-                    <br />
+        <div class="landingPage">
+            <div class="titleContainer">
+                <h1>IITK RESEARCH PORTAL</h1>
+            </div>
+            <div class="textContainer" >
+                <h2 style="margin:20px">WHAT IS ITURE?</h2>
+                <div>
+                    <p style="font-family: 'Lato', sans-serif;color:white;">
+                        ITURE( In-Term Undergraduate Research Engagement ) serves as a centralized platform for allocating
+                        research projects to motivated undergraduate students. It enables them to pursue projects within
+                        their respective departments and facilitates the initiation of interdisciplinary projects aligned
+                        with their interests. By fostering collaboration with professors and their teams at IIT Kanpur, it
+                        encourages students to engage in hands-on research experiences throughout the semester actively.
+                        development of the IITK Research Portal to streamline the process of mapping professors with
+                        students for projects.
+                        This initiative aims to address the cumbersome and time-consuming project allocation system.
+                        necessity of this portal, highlighting its potential to help students secure projects even
+                        mid-semester, and particularly for the SURGE program, which previously required students to secure
+                        professors four months in advance.
+    
+    
+                        <!-- <div style="text-align: center;">
+                        <ul style="display: inline-block; list-style-type: decimal; color: #004AAD;">
+                            <li style="font-size: 22px;"><b><span style="text-transform: lowercase;">i</span>SURP 2023</b></li>
+                            <li style="font-size: 22px;"><b>CORE 2023</b></li>
+                        </ul>
+                    </div> -->
+    
+                    </p>
                 </div>
             </div>
         </div>
