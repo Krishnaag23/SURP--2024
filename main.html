@@ -12,195 +12,361 @@
       crossorigin="anonymous"
     />
 
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet" />
+    <link href="css/table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="why.css" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/354b6f899d.js" crossorigin="anonymous"></script>
+
+
+    <!-- scrolling -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
-      @font-face {
-        font-family: "Bariol Bold";
-        src: local("Bariol Bold"), url("Bariol_Bold.woff") format("woff");
-      }
-      .title {
-        font-family: "Bariol Bold", "Helvetica Neue", Helvetica, Arial,
-          sans-serif;
-      }
-      body {
-        background-color: #eee;
-        font-family: "Lato", sans-serif;
-      }
-      .navbar-nav .nav-link:hover {
-        color: white !important;
-      }
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-      .table-bordered {
-        border: 2px solid #000; /* 2px solid black border */
-      }
+        @font-face {
+            font-family: "Bariol Bold";
+            src: local("Bariol Bold"), url("Bariol_Bold.woff") format("woff");
+        }
 
-      /* Style the table headers and cells */
-      .table-bordered th,
-      .table-bordered td {
-        border: 2px solid #000; /* 2px solid black border */
-        padding: 10px; /* Add padding for better readability */
-      }
+        @font-face {
+            font-family: "Bariol Bold";
+            src: local("Bariol Bold"), url("Bariol_Bold.woff") format("woff");
+        }
 
-      .title {
-        margin: 5%;
-        color: #004AAD;
-      }
-      .container {
-        width: 75%;
-        /* margin: auto; */
-        margin-bottom: 10%;
-      }
-      .card-title {
-        padding: 15px;
-        background-color: black;
-        color: white;
-        height: 50%;
-        align-items: center;
-      }
 
-      .card-text {
-        align-items: center;
-      }
-      .navbar {
-        padding: 10px;
-      }
+        .navbar {
+            padding: 10px;
+        }
 
-      .nav-item {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background-color: #004AAD;
-        z-index: 100;
-      }
+        .nav-item {
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
 
-      .dropdown:hover .dropdown-menu {
-        display: block;
-      }
+        .navbar-nav .nav-link:hover {
+            color: #004AAD !important;
+        }
 
-      .dropdown:hover .dropdown-toggle,
-    .dropdown:hover .dropdown-toggle:hover {
-        color: blue;
-    }
+        /* .intro-heading {
+        /* font-family: "Bariol Bold"; */
+        /* font-weight: 900;  */
 
-      .dropdown-menu li a {
-        color: white;
-        background-color: black;
-      }
+
+
+
+        .auto-type {
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: 'Anton', Noto-serif;
+            color: #004AAD;
+        }
+
+        .typed-cursor {
+            display: inline-block;
+            width: 1ch;
+            /* Adjust the width of the cursor */
+            animation: blink 1s infinite;
+            /* Blinking animation */
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* CSS style for close button */
+        .btn_custom {
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #004AAD;
+            border-radius: 0.6em;
+            color: #004AAD;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+        }
+
+        .btn_custom:hover,
+        .btn:focus {
+            color: #fff;
+            outline: 0;
+        }
+
+        .first {
+            transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        }
+
+        .first:hover {
+            box-shadow: 0 0 40px 40px #e1dddd inset;
+        }
+
+        /* Adding fade animation in announcement modal */
+        .modal {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in both;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translate3d(0, -20%, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        body,
+        html {
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 50px 25px;
+        }
+
+        header {
+            height: 100vh !important;
+        }
+
+        @media (min-width: 961px) {
+            header .intro-text {
+                padding-top: 25 em;
+                padding-bottom: 50px;
+            }
+        }
+
+        .faq-cell {
+            background-color: #eee;
+            padding: 20px;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 12px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+
+        .answer {
+            display: none;
+        }
+
+        .faq-cell:hover {
+            background-color: #ddd;
+        }
+
+        .answer p {
+            font-size: 18px;
+        }
+
+        .ext {
+            float: right;
+            margin-right: 3%;
+            cursor: pointer;
+            font-size: 22px;
+            color: #004AAD;
+        }
+
+        .project-button:hover {
+            transform: scale(1.2);
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-toggle,
+        .dropdown:hover .dropdown-toggle:hover {
+            color: blue;
+        }
+
+        .dropdown-menu li a {
+            color: white;
+            background-color: black;
+        }
+
+        .logo1 {
+            height: 5vmax;
+            padding-bottom: 15px;
+        }
+
+        .logo2 {
+            height: 6vmax;
+            padding-bottom: 15px;
+        }
+
+        @media screen and (max-width:800px) {
+            .logo1 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:650px) {
+            .logo1 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 9vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .logo1 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 8vmax;
+                padding-bottom: 0;
+            }
+        }
+
+        @media screen and (max-width:1200px) {
+            .logo1 {
+                height: 6vmax;
+                padding-bottom: 0;
+            }
+
+            .logo2 {
+                height: 7vmax;
+                padding-bottom: 0;
+            }
+        }
+        .intro-heading{
+            font-size: 20px;
+        }
+        @media screen and (max-width:600px){
+           .intro-heading{
+            font-size:24px;
+           }
+        }
+        .textData{
+        font-size: 22px;
+        }
+        @media screen and (max-width:500px){
+            .textData {
+                font-size:14px
+            }
+        }
     </style>
   </head>
   <body>
     <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg"
-      data-bs-theme="dark"
-      style="background-color: #004AAD; height: 100px"
-    >
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href=""
-          ><img src="img/ugac.png" alt="" style="height: 3vmax; padding-top: 0"
-        /></a>
-        <a class="navbar-brand" href=""
-          ><img
-            src="img/enpower.jpeg"
-            alt=""
-            style="height: 3vmax; padding-top: 0"
-        /></a>
-        <a
-          class="navbar-brand"
-          href=""
-          style="
-            font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial,
-              cursive;
-            margin-right: 38vw;
-          "
-        ></a>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #1c52be; opacity: 1;
+      transition: opacity 0.3s ease; height: auto; padding:16px;padding-bottom:18px; display:flex; align-items:center">
         <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          style="margin-left: -5%"
-        >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >HOME</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html#about"
-                >ABOUT</a
-              >
-            </li>
-            
-            <li class="nav-item  ">
-              <a
-                class="nav-link active "
-                aria-current="page"
-                href="surp.html"
-                
-              >
-                PROJECTS
-              </a>
-             
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
-                target="_blank"
-                >RULEBOOK</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="index.html#faqs"
-                >FAQ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="team.html"
-                >CONTACT</a
-              >
-            </li>
-            
-            <li class="nav-item ">
-              <a
-                class="nav-link active "
-                href="https://forms.gle/jr3VK1DaQ4PtMe14A"
-                target="_blank"
-                
-              >
-                APPLY NOW
-              </a>
-              
-            </li>
-          </ul>
+            style="width:100%; display:flex; position:relative; justify-content:space-between; margin:0; align-items:center">
+            <div class="navbar-header page-scroll"
+                style="display:flex; align-items:center; position:relative; left:0; gap:5px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" style="color: white; padding:10px" href="#page-top"><img
+                        class="logo1" src="img/2 (1).png" alt="" style="margin-top:-10px" /></a>
+                <a class="navbar-brand page-scroll text-center; padding:10px" style="color: white" href="#page-top"><img
+                        class="logo2" src="img/1.png" alt="" style="margin-top:-15px" /></a>
+
+            </div>
+
+            <div class="collapse navbar-collapse" style="position:relative;right:0" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" style="background-color: #1c52be; display: flex; flex-direction: row; gap:10px;">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255); background-color:#1c52be;font-weight: bolder;margin-top: 15px; ">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#about"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255); font-weight: bolder;margin-top: 15px; ">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="surp.html"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
+                            target="_blank"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#faqs"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bold;">FAQ</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" target="_blank" href="team.html"
+                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Contact</a>
+                    </li>
+                    <li>
+                        <img src="./img/logo.png" alt="" style="width: 75px;">
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     
     <h1 id="department-title" class="title text-center"></h1>
     <div class="container">
-        <div id="project-cards" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        <div id="project-cards" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 75px;"></div>
     </div>
 
     <!-- Modal Template -->
@@ -301,5 +467,3 @@
       ></script>
     </body>
   </html>
-  
-
