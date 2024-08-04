@@ -7,8 +7,8 @@
     <meta charset="utf-8" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -291,130 +291,231 @@
                 padding-bottom: 0;
             }
         }
-        .intro-heading{
+
+        .intro-heading {
             font-size: 20px;
         }
-        @media screen and (max-width:600px){
-           .intro-heading{
-            font-size:24px;
-           }
-        }
-        .textData{
-        font-size: 22px;
-        }
-        @media screen and (max-width:500px){
-            .textData {
-                font-size:14px
+
+        @media screen and (max-width:600px) {
+            .intro-heading {
+                font-size: 24px;
             }
         }
-        .landingPage{
-            margin-top:10vh;
-            display:flex; 
+
+        .textData {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width:500px) {
+            .textData {
+                font-size: 14px
+            }
+        }
+
+        .landingPage {
+            display: flex;
             flex-direction: column;
-            gap:30px;
-            position:absolute;
-            z-index:10;
+            gap: 30px;
+            position: absolute;
+            z-index: 10;
             justify-content: space-between;
             align-items: center;
-            width:100vw;
+            width: 100vw;
         }
-        .titleContainer{
-            width:100vw;
+
+        .titleContainer {
+            width: 100vw;
             text-align: center;
             position: relative;
-            z-index:6;
-            background: linear-gradient(to right, rgb(169, 168, 168),white, rgb(169, 168, 168));
+            z-index: 6;
+            background: linear-gradient(to right, rgb(169, 168, 168), white, rgb(169, 168, 168));
             animation: slideInFromTop 1s ease-in-out forwards;
         }
+
         @keyframes slideInFromTop {
             0% {
                 transform: translateY(-100%);
             }
+
             100% {
                 transform: translateY(0);
             }
         }
-        .titleContainer h1{
-            font-size:54px;
+
+        .titleContainer h1 {
+            font-size: 54px;
             color: black;
-            font-weight:900;
+            font-weight: 900;
         }
-        .textContainer h2{
-            font-size:38px
+
+        .textContainer h2 {
+            font-size: 38px
         }
-        .textContainer p{
-            font-size:17px;
+
+        .textContainer p {
+            font-size: 17px;
         }
-        .textContainer{
-            width:50vw; 
-            height:68vh; 
-            background-color:rgba(0,0,0,0.7); 
-            border-radius: 15px; 
-            position:relative;
-            display:flex;
+
+        .textContainer {
+            width: 50vw;
+            height: 68vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            position: relative;
+            display: flex;
             z-index: 5;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding:20px;
-            font-size:20px;
+            padding: 20px;
+            font-size: 20px;
             animation: slideInFromBottom 1.5s ease-in-out forwards;
         }
+
         @keyframes slideInFromBottom {
             0% {
                 transform: translateY(100%);
                 opacity: 0;
             }
+
             100% {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
-        @media screen and (max-width:500px){
-            .landingPage{
-                margin-top:92px;
-                display:flex; 
+
+        @media screen and (max-width:500px) {
+            .landingPage {
+                display: flex;
                 flex-direction: column;
-                gap:30px;
-                position:absolute;
-                z-index:10;
+                gap: 30px;
+                position: absolute;
+                z-index: 10;
                 justify-content: space-between;
                 align-items: center;
-                width:100vw;
+                width: 100vw;
+                margin: 0;
+                top:84.8px;
             }
-            .titleContainer{
-                width:100vw;
+
+            .titleContainer {
+                width: 100vw;
                 text-align: center;
                 position: relative;
-                z-index:6;
-                background: linear-gradient(to right, rgb(169, 168, 168),white, rgb(169, 168, 168));
+                z-index: 6;
+                background: linear-gradient(to right, rgb(169, 168, 168), white, rgb(169, 168, 168));
                 animation: slideInFromTop 1s ease-in-out forwards;
             }
-            .titleContainer h1{
-                font-size:28px;
+
+            .titleContainer h1 {
+                font-size: 28px;
                 color: black;
-                font-weight:800;
+                font-weight: 800;
             }
-            .textContainer{
-                width:90vw; 
-                height:auto; 
-                background-color:rgba(0,0,0,0.7); 
-                border-radius: 15px; 
-                position:relative;
-                display:flex;
+
+            .textContainer {
+                width: 90vw;
+                height: auto;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 15px;
+                position: relative;
+                display: flex;
                 z-index: 5;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding:15px;
-                font-size:20px;
+                padding: 15px;
+                font-size: 20px;
                 animation: slideInFromBottom 1.5s ease-in-out forwards;
             }
+
+            .textContainer h2 {
+                font-size: 30px
+            }
+
+            .textContainer p {
+                font-size: 15px;
+            }
+           #myCarousel .carousel-inner .item img{
+               height:900px;
+               object-fit: cover;
+           }
+        }
+        @media screen and (min-width:500px) and (max-width:767px){
+            .landingPage {
+                position: absolute;
+                top:84.8px;
+            }
+            .titleContainer h1 {
+                font-size: 32px;
+                color: black;
+                font-weight: 800;
+            }
+            .textContainer {
+                width: 90vw;
+                height: auto;
+                background-color: rgba(0, 0, 0, 0.7);
+                border-radius: 15px;
+                position: relative;
+                display: flex;
+                z-index: 5;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                font-size: 20px;
+                animation: slideInFromBottom 1.5s ease-in-out forwards;
+            }
+
+            .textContainer h2 {
+                font-size: 30px
+            }
+
+            .textContainer p {
+                font-size: 15px;
+            }
+        }
+        @media screen and (min-width:767px) {
+            .landingPage {
+                position: absolute;
+                top:109px;
+            }
+            .titleContainer h1{
+                font-size:40px;
+            }
+            .textContainer {
+                width: 70vw;
+                height: auto;
+            }
             .textContainer h2{
-                font-size:30px
+                font-size: 30px;
             }
             .textContainer p{
-                font-size:15px;
+                font-size: 16px;
+            }
+        }
+        @media screen and (min-width:1100px) {
+            .textContainer p{
+                font-size: 18px;
+            }
+        }
+        @media screen and (min-width:1300px) {
+            .landingPage {
+                position: absolute;
+                top:109px;
+            }
+            .titleContainer h1{
+                font-size:48px;
+            }
+            .textContainer {
+                width: 50vw;
+                height: auto;
+            }
+            .textContainer h2{
+                font-size: 30px;
+            }
+            .textContainer p{
+                font-size: 18px;
             }
         }
     </style>
@@ -425,139 +526,147 @@
 
 
     <!-- Navigation -->
+    <section style="height:100vh; width:100vw; display:flex; flex-direction:column; padding:0">
+        <nav class="navbar navbar-default navbar-fixed-top"
+            style="background-color: #1c52be; opacity: 1;
+          transition: opacity 0.3s ease; padding:16px;padding-bottom:18px; display:flex; align-items:center">
+            <div
+                style="width:100%; display:flex; position:relative; justify-content:space-between; margin:0; align-items:center">
+                <div class="navbar-header page-scroll"
+                    style="display:flex; align-items:center; position:relative; left:0; gap:5px">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" style="color: white; padding:10px" href="#page-top"><img
+                            class="logo1" src="img/2 (1).png" alt="" style="margin-top:-10px" /></a>
+                    <a class="navbar-brand page-scroll text-center; padding:10px" style="color: white"
+                        href="#page-top"><img class="logo2" src="img/1.png" alt="" style="margin-top:-15px" /></a>
 
+                </div>
 
+                <div class="collapse navbar-collapse" style="position:relative;right:0"
+                    id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right"
+                        style="background-color: #1c52be; display: flex; gap: 10px;">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href=""
+                                style="font-size:medium;padding:9px; color:rgb(255, 255, 255); background-color:#1c52be;font-weight: bolder;margin-top: 15px; ">Home</a>
+                        </li>
 
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #1c52be; opacity: 1;
-      transition: opacity 0.3s ease; height: auto; padding:16px;padding-bottom:18px; display:flex; align-items:center">
-        <div
-            style="width:100%; display:flex; position:relative; justify-content:space-between; margin:0; align-items:center">
-            <div class="navbar-header page-scroll"
-                style="display:flex; align-items:center; position:relative; left:0; gap:5px">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" style="color: white; padding:10px" href="#page-top"><img
-                        class="logo1" src="img/2 (1).png" alt="" style="margin-top:-10px" /></a>
-                <a class="navbar-brand page-scroll text-center; padding:10px" style="color: white" href="#page-top"><img
-                        class="logo2" src="img/1.png" alt="" style="margin-top:-15px" /></a>
-
-            </div>
-
-            <div class="collapse navbar-collapse" style="position:relative;right:0" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="background-color: #1c52be; display: flex; gap: 10px;">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href=""
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255); background-color:#1c52be;font-weight: bolder;margin-top: 15px; ">Home</a>
-                    </li>
-                    
-                    <li>
-                        <a class="page-scroll" href="surp.html"
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
-                    </li>
-                    <li>
-                        <a href="https://docs.google.com/document/d/15m2JmlLXbwvWnJeXvoIloPCfHCmoBxdCJR3jb9GrbGw/edit#heading=h.4lmhnz3c0ibv"
-                            target="_blank"
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#faqs"
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bold;">FAQ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" target="_blank" href="team.html"
-                            style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Contact</a>
-                    </li>
-                    <li>
-                        <img src="./img/logo.png" alt="" style="width: 75px;">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header style="display:flex; justify-content:center; align-items:center">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="./img/banner-01.jpg" alt="Chania" width="1600" height="698">
-        <div class="carousel-caption">
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="./img/banner-02.jpg" alt="Chania" width="1600" height="698">
-        <div class="carousel-caption">
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="./img/banner-03.jpg" alt="Flower" width="1600" height="698">
-        <div class="carousel-caption">
-          
-        </div>
-      </div>
-
-      
-  
-    </div>
-
-    <!-- Left and right controls -->
-    
-  </div>
-</div>
-
-        <div class="landingPage">
-            <div class="titleContainer">
-                <h1>IITK RESEARCH PORTAL</h1>
-            </div>
-            <div class="textContainer" >
-                <h2 style="margin:20px">WHAT IS ITURE?</h2>
-                <div>
-                    <p style="font-family: 'Lato', sans-serif;color:white;">
-                        ITURE( In-Term Undergraduate Research Engagement ) serves as a centralized platform for allocating
-                        research projects to motivated undergraduate students. It enables them to pursue projects within
-                        their respective departments and facilitates the initiation of interdisciplinary projects aligned
-                        with their interests. By fostering collaboration with professors and their teams at IIT Kanpur, it
-                        encourages students to engage in hands-on research experiences throughout the semester actively.
-                        development of the IITK Research Portal to streamline the process of mapping professors with
-                        students for projects.
-                        This initiative aims to address the cumbersome and time-consuming project allocation system.
-                        necessity of this portal, highlighting its potential to help students secure projects even
-                        mid-semester, and particularly for the SURGE program, which previously required students to secure
-                        professors four months in advance.
-    
-    
-                        <!-- <div style="text-align: center;">
-                        <ul style="display: inline-block; list-style-type: decimal; color: #004AAD;">
-                            <li style="font-size: 22px;"><b><span style="text-transform: lowercase;">i</span>SURP 2023</b></li>
-                            <li style="font-size: 22px;"><b>CORE 2023</b></li>
-                        </ul>
-                    </div> -->
-    
-                    </p>
+                        <li>
+                            <a class="page-scroll" href="surp.html"
+                                style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
+                        </li>
+                        <li>
+                            <a href="https://docs.google.com/document/d/15m2JmlLXbwvWnJeXvoIloPCfHCmoBxdCJR3jb9GrbGw/edit#heading=h.4lmhnz3c0ibv"
+                                target="_blank"
+                                style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#faqs"
+                                style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bold;">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" target="_blank" href="team.html"
+                                style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Contact</a>
+                        </li>
+                        <li>
+                            <img src="./img/logo.png" alt="" style="width: 75px;">
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
+
+        <!-- Header -->
+        <header style="display:flex;width:100vw; justify-content:center; align-items:center">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <img src="./img/banner-01.jpg" alt="Chania" width="1600" height="698">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/banner-02.jpg" alt="Chania" width="1600" height="698">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/banner-03.jpg" alt="Flower" width="1600" height="698">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <!-- Left and right controls -->
+
+            </div>
+            </div>
+
+            <div class="landingPage">
+                <div class="titleContainer">
+                    <h1>IITK RESEARCH PORTAL</h1>
+                </div>
+                <div class="textContainer">
+                    <h2 style="margin:20px">WHAT IS ITURE?</h2>
+                    <div>
+                        <p style="font-family: 'Lato', sans-serif;color:white;">
+                            ITURE( In-Term Undergraduate Research Engagement ) serves as a centralized platform for
+                            allocating
+                            research projects to motivated undergraduate students. It enables them to pursue projects
+                            within
+                            their respective departments and facilitates the initiation of interdisciplinary projects
+                            aligned
+                            with their interests. By fostering collaboration with professors and their teams at IIT
+                            Kanpur, it
+                            encourages students to engage in hands-on research experiences throughout the semester
+                            actively.
+                            development of the IITK Research Portal to streamline the process of mapping professors with
+                            students for projects.
+                            This initiative aims to address the cumbersome and time-consuming project allocation system.
+                            necessity of this portal, highlighting its potential to help students secure projects even
+                            mid-semester, and particularly for the SURGE program, which previously required students to
+                            secure
+                            professors four months in advance.
+
+
+                            <!-- <div style="text-align: center;">
+                            <ul style="display: inline-block; list-style-type: decimal; color: #004AAD;">
+                                <li style="font-size: 22px;"><b><span style="text-transform: lowercase;">i</span>SURP 2023</b></li>
+                                <li style="font-size: 22px;"><b>CORE 2023</b></li>
+                            </ul>
+                        </div> -->
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
 
     <!-- About Section -->
     <section id="about" style="background-color: #fff">
@@ -947,7 +1056,8 @@
                     <ul>
                         <li>
                             The project durations listed are tentative and may extend beyond the initial timeframe. The
-                            length of the IITK Research project is determined mutually by you and the professor. During the interview,
+                            length of the IITK Research project is determined mutually by you and the professor. During
+                            the interview,
                             you can propose your preferred dates, and the professor will provide feedback on their
                             availability.
                         </li>
@@ -1014,7 +1124,8 @@
                     <ul>
                         <li>
                             At the end of their project, the Professor would review their work and give it a grade out
-                            of 10, and anyone >= 6 will get a satisfactory certificate for IITK Research project, and those >=8 will get
+                            of 10, and anyone >= 6 will get a satisfactory certificate for IITK Research project, and
+                            those >=8 will get
                             a certificate of excellence.
                         </li>
                     </ul>
@@ -1200,7 +1311,7 @@
             strings: ["IN-TERM UNDERGRADUATE RESEARCH ENGAGEMENT"],
             typeSpeed: 80,
             backSpeed: 80,
-            startDelay:0,
+            startDelay: 0,
             loop: true,
         });
     </script>
