@@ -11,6 +11,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -64,6 +66,9 @@
             letter-spacing: 1px;
         }
 
+        body{
+            min-height: 100vh;
+        }
         .navbar-nav .nav-link:hover {
             color: #004AAD !important;
         }
@@ -145,10 +150,7 @@
             opacity: 0;
             animation: fadeIn 0.5s ease-in both;
         }
-        .footer{
-          position: absolute;
-          bottom: 0;
-        }
+        
 
         @keyframes fadeIn {
             from {
@@ -347,7 +349,7 @@
                             style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Projects</a>
                     </li>
                     <li>
-                        <a href="https://docs.google.com/document/d/15m2JmlLXbwvWnJeXvoIloPCfHCmoBxdCJR3jb9GrbGw/edit#heading=h.4lmhnz3c0ibv"
+                        <a href="https://docs.google.com/document/d/1fBzoJRVthp8Azr8a7n92JMuUeRkX08GqdRncBK0qzpM/edit?usp=sharing"
                             target="_blank"
                             style="font-size:medium;padding:9px; color:rgb(255, 255, 255);margin-top: 15px;  font-weight: bolder;">Rulebook</a>
                     </li>
@@ -369,8 +371,8 @@
 
     
     <h1 id="department-title" class="title text-center"></h1>
-    <div class="container">
-        <div id="project-cards" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 75px;"></div>
+    <div class="container" style="min-height: 54vh;">
+        <div id="project-cards" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 75px; "></div>
     </div>
 
     <!-- Modal Template -->
@@ -429,7 +431,7 @@
     
     <footer class="bg-light mt-5 footer w-100 flex-shrink-0"
         style="background: #eee !important; width: 100%; margin-top: 40px" id="temp">
-        <div class="container py-4" style="padding-bottom: 0px !important">
+        <div class="container py-4" style="padding-bottom: 0px !important;">
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 col-md-6">
                     <br>
