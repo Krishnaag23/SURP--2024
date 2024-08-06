@@ -5,7 +5,6 @@ function getCurrentDomain() {
     return domain ? domain.charAt(0).toUpperCase() + domain.slice(1) : null; // Capitalize the first letter if domain exists
 }
 
-
 // Fetch the projects JSON data
 fetch('projects.json')
     .then(response => response.json())
@@ -42,7 +41,7 @@ fetch('projects.json')
                         </div>
                         
                         <div class="progress mb-3">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated ${progress > 0 && progress <= 25 ? "" : progress > 25 && progress <= 50 ? "bg-info" : progress > 50 && progress <= 75 ? "bg-warning" : progress > 75 && progress < 100 ? "bg-danger" : "bg-success"}" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${appliedStudents}/${maxStudents}</div>
+                            <div class="progress-bar progress-bar-striped progress-bar-animated ${progress > 0 && progress <= 25 ? "bg-info" : progress > 25 && progress <= 50 ? "bg-info" : progress > 50 && progress <= 75 ? "bg-warning" : progress > 75 && progress < 100 ? "bg-danger" : "bg-success"}" role="progressbar" style="width: ${progress}%" aria-valuenow="${progress}" aria-valuemin="0" aria-valuemax="100">${appliedStudents}/${maxStudents}</div>
                         </div>
                         <button
                             type="button"
@@ -59,114 +58,94 @@ fetch('projects.json')
             projectCardsContainer.appendChild(card);
             
             // Create project modal
-            const modal = document.createElement('div');
-            modal.className = 'modal fade';
-            modal.id = `modal-${index}`;
-            modal.setAttribute('data-bs-backdrop', 'static');
-            modal.setAttribute('data-bs-keyboard', 'false');
-            modal.setAttribute('tabindex', '-1');
-            modal.setAttribute('aria-labelledby', `modalLabel-${index}`);
-            modal.setAttribute('aria-hidden', 'true');
-            modal.innerHTML = `
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="modalLabel-${index}">${project['Project UID']}</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body table-responsive">
-                            <table class="table table-bordered">
-                                <tr>
-                                    <th>Description</th>
-                                    <td>${project['Project Description']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Number of students</th>
-                                    <td>${project['Number of Students Required']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Year of study</th>
-                                    <td>${project['Year of Study Criteria']}</td>
-                                </tr>
-                                <tr>
-                                    <th>CPI</th>
-                                    <td>${project['CPI Eligibility Criteria']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Prerequisites</th>
-                                    <td>${project['Prerequisites']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Duration</th>
-                                    <td>${project['Duration']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Learning outcome</th>
-                                    <td>${project['Learning Outcome & Expectations from the students']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Weekly time commitment</th>
-                                    <td>${project['Weekly Time Commitment']}</td>
-                                </tr>
-                                <tr>
-                                    <th>Assignment</th>
-                                    <td>${project['Assignment'] ? `<a href="${project['Assignment']}" target="_blank">Link</a>` : 'Not provided'}</td>
-                                </tr>
-                                <tr>
-                                    <th>Instructions for assignment</th>
-                                    <td>${project['Instructions for assignment'] || 'Not provided'}</td>
-                                </tr>
-                                <tr>
-                                    <th>Additional key points</th>
-                                    <td>${project['Additional key points'] || 'Not provided'}</td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-
-                            <button
-                            type="button"
-                            class="btn btn-primary btn-apply"
-                            style="background-color: #004AAD; border-color: #004AAD">
-                            Apply
-                        </button>
-
+            const existingModal = document.getElementById(`modal-${index}`);
+            if (!existingModal) {
+                const modal = document.createElement('div');
+                modal.className = 'modal fade';
+                modal.id = `modal-${index}`;
+                modal.style.marginTop = '100px';
+                modal.setAttribute('data-bs-backdrop', 'static');
+                modal.setAttribute('data-bs-keyboard', 'false');
+                modal.setAttribute('tabindex', '-1');
+                modal.setAttribute('aria-labelledby', `modalLabel-${index}`);
+                modal.setAttribute('aria-hidden', 'true');
+                modal.innerHTML = `
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modalLabel-${index}">${project['Project UID']}</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <th>Description</th>
+                                            <td>${project['Project Description']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Number of students</th>
+                                            <td>${project['Number of Students Required']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Year of study</th>
+                                            <td>${project['Year of Study Criteria']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>CPI</th>
+                                            <td>${project['CPI Eligibility Criteria']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Prerequisites</th>
+                                            <td>${project['Prerequisites']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Duration</th>
+                                            <td>${project['Duration']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Learning outcome</th>
+                                            <td>${project['Learning Outcome & Expectations from the students']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Weekly time commitment</th>
+                                            <td>${project['Weekly Time Commitment']}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Assignment</th>
+                                            <td>${project['Assignment'] ? `<a href="${project['Assignment']}" target="_blank">Link</a>` : 'Not provided'}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Instructions for assignment</th>
+                                            <td>${project['Instructions for assignment'] || 'Not provided'}</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Additional key points</th>
+                                            <td>${project['Additional key points'] || 'Not provided'}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-apply"
+                                    style="background-color: #004AAD; border-color: #004AAD">
+                                    Apply
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
+                `;
+                document.body.appendChild(modal);
+            }
             
-            document.body.appendChild(modal);
-            const applyButton = modal.querySelector('.btn-apply');
+            // Attach event listener to Apply button
+            const applyButton = document.querySelector(`#modal-${index} .btn-apply`);
             applyButton.addEventListener('click', function () {
-                if (applyButton.classList.contains('applied')) {
-                    appliedStudents--;
-                    progress = (appliedStudents / maxStudents) * 100;
-                    const progressBar = card.querySelector('.progress-bar');
-                    progressBar.style.width = `${progress}%`;
-                    progressBar.setAttribute('aria-valuenow', progress);
-                    progressBar.textContent = `${appliedStudents}/${maxStudents}`;
-                    applyButton.textContent = 'Apply';
-                    applyButton.classList.remove('applied');
-                    applyButton.classList.remove('btn-danger');
-                    applyButton.classList.add('btn-primary');
-                    applyButton.style.backgroundColor = '#004AAD';
-                    applyButton.style.borderColor = '#004AAD';
-                } else {
-                    appliedStudents++;
-                    progress = (appliedStudents / maxStudents) * 100;
-                    const progressBar = card.querySelector('.progress-bar');
-                    progressBar.style.width = `${progress}%`;
-                    progressBar.setAttribute('aria-valuenow', progress);
-                    progressBar.textContent = `${appliedStudents}/${maxStudents}`;
-                    applyButton.textContent = 'Cancel Application';
-                    applyButton.classList.add('applied');
-                    applyButton.classList.remove('btn-primary');
-                    applyButton.classList.add('btn-danger');
-                    applyButton.style.backgroundColor = '#FF0000';
-                    applyButton.style.borderColor = '#FF0000';
-                }
+                // Redirect to Google Form
+                window.location.href = 'https://forms.gle/aX6r6dxfnggVMdrVA';
             });
         });
     })
