@@ -311,14 +311,15 @@
                 font-size: 14px
             }
         }
-
+        .modal{
+            overflow-y:scroll;
+        }
         .modal-dialog {
             display: flex;
             align-items: center;
             justify-content: center;
-            /* min-height: calc(100% - 1.75rem); */
-            height: 100%;
-            top:18vh;
+            height: 120%;
+            top:20vh;
             z-index: 99;
         }
 
@@ -388,7 +389,7 @@
     </nav>
 
 
-    <h1 id="department-title" class="title text-center"></h1>
+    <h1 id="department-title" class="title text-center" style=" margin-top: 20vh; margin-bottom: -5vh;"></h1>
     <div class="container" style="min-height: 54vh;">
         <div id="project-cards" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 75px; "></div>
     </div>
