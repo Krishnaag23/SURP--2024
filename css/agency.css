@@ -176,14 +176,14 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-  color: #004AAD;
+  color: #3c2c1f;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #004AAD;
+  color: #3c2c1f;
 }
 
 .navbar-default .navbar-collapse {
@@ -191,8 +191,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-  border-color: #004AAD;
-  background-color: #004AAD;
+  border-color: #3c2c1f;
+  background-color: #3c2c1f;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -201,7 +201,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #004AAD;
+  background-color: #3c2c1f;
 }
 
 .navbar-default .nav li a {
@@ -215,19 +215,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: #004AAD;
+  color: #3c2c1f;
 }
 
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: #fff;
-  background-color: #004AAD;
+  background-color: #3c2c1f;
 }
 
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #004AAD;
+  background-color: #3c2c1f;
 }
 
 @media (min-width: 768px) {
@@ -294,7 +294,7 @@ header .intro-text {
   font-size: 3vh !important;
   font-weight: 600;
   line-height: 50px;
-  color:#004AAD;
+  color:#3c2c1f;
 }
 
 @media (min-width: 768px) {
@@ -545,7 +545,7 @@ section#contact:-ms-input-placeholder {
 }
 
 section#contact .text-danger {
-  color: #004AAD;
+  color: #3c2c1f;
 }
 /*
 footer {
